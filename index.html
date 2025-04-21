@@ -9,7 +9,6 @@
     <title>IPTV ESPAÑA SIN CORTES</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* General Styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -28,15 +27,14 @@
             font-weight: 700;
         }
 
-        /* Cambiar color de los títulos a azul */
         h1 {
             font-size: 2.8rem;
-            color: #007bff; /* Azul */
+            color: #007bff;
         }
 
         h2 {
             font-size: 2rem;
-            color: #007bff; /* Azul */
+            color: #007bff;
         }
 
         p {
@@ -45,6 +43,7 @@
         }
 
         .hero {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,7 +52,19 @@
             background: url('futbol.jpg') center/cover no-repeat;
             color: white;
             text-align: center;
-            background-blur: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        .hero > * {
+            position: relative;
+            z-index: 1;
         }
 
         .hero h1 {
@@ -65,11 +76,10 @@
         .hero p {
             font-size: 1.2rem;
             margin-top: 1rem;
-            line-height: 1.6;
         }
 
         .btn {
-            background-color: #007bff; /* Azul */
+            background-color: #007bff;
             color: white;
             padding: 1rem 2.5rem;
             text-decoration: none;
@@ -77,11 +87,11 @@
             font-size: 1.1rem;
             transition: background-color 0.3s ease;
             margin-top: 1.5rem;
+            display: inline-block;
         }
 
-        /* Hover state para el botón */
         .btn:hover {
-            background-color: #0056b3; /* Azul más oscuro */
+            background-color: #0056b3;
         }
 
         .section {
@@ -105,7 +115,6 @@
             box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
         }
 
-        /* Responsive Styles */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -129,8 +138,7 @@
 
     <div class="hero">
         <h1>Todo el fútbol por solo 50€/año</h1>
-        <p>+20.000 Canales, +50.000 Películas/Series, +1000 Canales en Español. ¡Accede a MOVISTAR, DAZN, La Liga, BEIN, Netflix y mucho más! Calidad SD / HD / FHD. Servidor rápido y soporte 24/7. ¡Prueba gratis durante 30 días!</p>
-        <!-- Botón de Telegram con color azul -->
+        <p>+20.000 Canales, +50.000 Películas/Series, +1000 Canales en Español. ¡Accede a MOVISTAR, DAZN, M+ LA LIGA, LA LIGA REPLAY, NETFLIX, MOTO GP, FORMULA 1, NBA y mucho más! Calidad SD / HD / FHD. Servidor rápido y soporte 24/7. ¡Prueba gratis durante 30 días!</p>
         <a class="btn" href="https://t.me/adrianrs9282" target="_blank">Contactar por Telegram</a>
     </div>
 
@@ -140,12 +148,12 @@
             <li>Fútbol español e internacional</li>
             <li>Canales deportivos premium</li>
             <li>Acceso durante 12 meses</li>
-            <li>Compatible con Smart TV, Android, Fire TV, Google TV</li>
+            <li>Compatible con Smart TV, Android, Fire TV, Google TV, Iphone(Apple)</li>
         </ul>
     </div>
 
     <div class="imagen-centro">
-        <img src="mi_foto.jpg" alt="Demostración de IPTV con fútbol en vivo y canales premium">
+        <img src="mi_foto.jpg" alt="Demostración de IPTV con fútbol en vivo y canales premium" loading="lazy" />
     </div>
 
     <div class="section">
@@ -158,12 +166,10 @@
         <p>Ofrecemos métodos de pago seguros y soporte personalizado:</p>
         <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
             <li>
-                <strong>:</strong><br>
-                <a class="btn" href="https://buy.stripe.com/test_aEU4j7fyw1Wd8JW3cc" target="_blank">Pagar con tarjeta</a>
-            </li><br>
+                
             <li>
-                <strong>:</strong><br>
-                <a class="btn" href="https://t.me/adrianrs9282" target="_blank">Contacta por Telegram</a>
+                <strong>Soporte vía Telegram</strong><br>
+                <a class="btn" href="https://t.me/adrianrs9282" target="_blank">Pagos- BIZUM</a>
             </li>
         </ul>
     </div>
