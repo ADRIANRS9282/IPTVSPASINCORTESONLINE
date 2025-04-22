@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://adrianrs9282.github.io/IPTVSPASINCORTESONLINE/sitemap.xml
