@@ -115,6 +115,45 @@
             box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
         }
 
+        /* FAQ Styling */
+        .faq-section {
+            padding: 3rem 2rem;
+            background-color: #212121;
+            color: #fff;
+        }
+
+        .faq-section h2 {
+            color: #007bff;
+        }
+
+        .faq-item {
+            margin: 20px 0;
+        }
+
+        .faq-item h3 {
+            font-size: 1.8rem;
+            color: #007bff;
+        }
+
+        .faq-item p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Floating WhatsApp button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50%;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -138,11 +177,11 @@
 
     <div class="hero">
         <h1>Todo el fútbol por solo 50€/año</h1>
-        <p>+🎬 Más de 20,000 Canales en Vivo y +50,000 Películas y Series
-📺 Contenido en Español y Multilenguaje | Deportes, Cine, Series y Más
-🚀 Calidad SD, HD y UHD | Servidores Estables y Rápidos
-🎁 Acceso a los Mejores Eventos Deportivos, Estrenos, TV Internacional y Nacional
-🔒 Soporte 24/7 | Prueba Gratuita de 30 Días | Sin Permanencia </p>
+        <p>+🎬 Más de 20,000 Canales en Vivo y +50,000 Películas y Series  
+📺 Contenido en Español y Multilenguaje | Deportes, Cine, Series y Más  
+🚀 Calidad SD, HD y UHD | Servidores Estables y Rápidos  
+🎁 Acceso a los Mejores Eventos Deportivos, Estrenos, TV Internacional y Nacional  
+🔒 Soporte 24/7 | Prueba Gratuita de 30 Días | Sin Permanencia</p>
         <a class="btn" href="https://t.me/adrianrs9282" target="_blank">Contactar por Telegram</a>
     </div>
 
@@ -157,7 +196,7 @@
     </div>
 
     <div class="imagen-centro">
-        <img src="mi_foto.jpg" alt="Demostración de IPTV con fútbol en vivo y canales premium" loading="lazy" />
+        <img src="iptv_en_vivo.jpg" alt="Demostración de IPTV con fútbol en vivo y canales premium" loading="lazy" />
     </div>
 
     <div class="section">
@@ -170,16 +209,58 @@
         <p>Ofrecemos métodos de pago seguros y soporte personalizado:</p>
         <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
             <li>
-                
-            <li>
                 <strong>Soporte vía Telegram</strong><br>
                 <a class="btn" href="https://t.me/adrianrs9282" target="_blank">Pagos- BIZUM</a>
             </li>
         </ul>
     </div>
 
+    <!-- Sección de Preguntas Frecuentes -->
+    <div class="faq-section">
+        <h2>❓ Preguntas Frecuentes</h2>
+        <div class="faq-item">
+            <h3>📩 ¿Cómo recibiré mi suscripción?</h3>
+            <p>Después de completar el pago, recibirás tus datos de acceso directamente por <strong>Telegram</strong>. Te enviaremos usuario, contraseña y una guía paso a paso para que puedas instalar y usar el servicio en tu dispositivo favorito.</p>
+        </div>
+        <div class="faq-item">
+            <h3>💳 ¿Cómo pago mi suscripción?</h3>
+            <p>Puedes realizar el pago de forma rápida y segura por <strong>Telegram</strong>. Haz clic en el siguiente botón y sigue las instrucciones personalizadas:</p>
+            <p style="text-align: center;">
+                <a href="https://t.me/adrianrs9282" target="_blank" class="btn">Pagar por Telegram</a>
+            </p>
+        </div>
+        <div class="faq-item">
+            <h3>🔄 ¿Puedo solicitar un reembolso?</h3>
+            <p>Ofrecemos una <strong>prueba gratuita de 30 días</strong> para que pruebes todo el contenido. Una vez activado el plan, no se hacen reembolsos salvo que exista un problema técnico real que no pueda resolverse por nuestro soporte.</p>
+        </div>
+        <div class="faq-item">
+            <h3>🧾 ¿Qué incluye mi suscripción?</h3>
+            <ul style="font-size: 1.2rem; list-style-type: disc; margin-left: 20px;">
+                <li>+20,000 canales en vivo</li>
+                <li>+50,000 películas y series</li>
+                <li>Deportes, entretenimiento, infantil, noticias y más</li>
+                <li>Canales en español y varios idiomas</li>
+                <li>Calidad SD, HD y Full HD</li>
+                <li>Compatible con todos los dispositivos</li>
+                <li><strong>Soporte 24/7 vía Telegram</strong></li>
+            </ul>
+        </div>
+        <div class="faq-item">
+            <h3>🧠 ¿Qué es IPTV?</h3>
+            <p>Es un sistema de televisión digital que te permite ver canales y contenido a través de Internet. Con IPTV puedes acceder a miles de canales y películas sin antenas ni cable, solo necesitas una buena conexión y un dispositivo compatible.</p>
+        </div>
+    </div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/34642425345" target="_blank" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer>
         <p>© 2025 IPTV ESPAÑA SIN CORTES - Todos los derechos reservados</p>
     </footer>
+
+    <!-- Script para icono de WhatsApp -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
